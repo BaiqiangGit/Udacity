@@ -12719,6 +12719,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<<<<<<< HEAD
 <div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
@@ -12737,6 +12738,26 @@ Default GPU Device: /gpu:0
 <span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.001</span>
 <span class="c1"># Dropout Keep Probability</span>
 <span class="n">keep_probability</span> <span class="o">=</span> <span class="mf">0.5</span>
+=======
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Number of Epochs</span>
+<span class="n">epochs</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="c1"># Batch Size</span>
+<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">1024</span>
+<span class="c1"># RNN Size</span>
+<span class="n">rnn_size</span> <span class="o">=</span> <span class="mi">256</span>
+<span class="c1"># Number of Layers</span>
+<span class="n">num_layers</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="c1"># Embedding Size</span>
+<span class="n">encoding_embedding_size</span> <span class="o">=</span> <span class="mi">32</span>
+<span class="n">decoding_embedding_size</span> <span class="o">=</span> <span class="mi">32</span>
+<span class="c1"># Learning Rate</span>
+<span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.01</span>
+<span class="c1"># Dropout Keep Probability</span>
+<span class="n">keep_probability</span> <span class="o">=</span> <span class="mf">0.75</span>
+>>>>>>> dab270a41ec681edbc3b196ecdf33fb6db27137d
 <span class="n">display_step</span> <span class="o">=</span> <span class="mi">50</span>
 </pre></div>
 
@@ -12756,7 +12777,11 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<<<<<<< HEAD
 <div class="prompt input_prompt">In&nbsp;[29]:</div>
+=======
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
+>>>>>>> dab270a41ec681edbc3b196ecdf33fb6db27137d
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12826,7 +12851,11 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<<<<<<< HEAD
 <div class="prompt input_prompt">In&nbsp;[30]:</div>
+=======
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
+>>>>>>> dab270a41ec681edbc3b196ecdf33fb6db27137d
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12879,7 +12908,11 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<<<<<<< HEAD
 <div class="prompt input_prompt">In&nbsp;[31]:</div>
+=======
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
+>>>>>>> dab270a41ec681edbc3b196ecdf33fb6db27137d
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12956,6 +12989,7 @@ Default GPU Device: /gpu:0
 
                 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Epoch </span><span class="si">{:&gt;3}</span><span class="s1"> Batch </span><span class="si">{:&gt;4}</span><span class="s1">/</span><span class="si">{}</span><span class="s1"> - Train Accuracy: </span><span class="si">{:&gt;6.4f}</span><span class="s1">, Validation Accuracy: </span><span class="si">{:&gt;6.4f}</span><span class="s1">, Loss: </span><span class="si">{:&gt;6.4f}</span><span class="s1">&#39;</span>
                       <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">epoch_i</span><span class="p">,</span> <span class="n">batch_i</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">source_int_text</span><span class="p">)</span> <span class="o">//</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">train_acc</span><span class="p">,</span> <span class="n">valid_acc</span><span class="p">,</span> <span class="n">loss</span><span class="p">))</span>
+<<<<<<< HEAD
                 <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">                if valid_acc &gt;= 0.981 and train_acc &gt;= 0.981:</span>
 <span class="sd">                    learning_rate = 0.00001</span>
@@ -12966,6 +13000,17 @@ Default GPU Device: /gpu:0
 <span class="sd">                else:</span>
 <span class="sd">                    pass</span>
 <span class="sd">                &#39;&#39;&#39;</span>
+=======
+                <span class="k">if</span> <span class="n">valid_acc</span> <span class="o">&gt;=</span> <span class="mf">0.981</span> <span class="ow">and</span> <span class="n">train_acc</span> <span class="o">&gt;=</span> <span class="mf">0.981</span><span class="p">:</span>
+                    <span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.00001</span>
+                <span class="k">elif</span> <span class="n">valid_acc</span> <span class="o">&gt;=</span><span class="mf">0.98</span><span class="p">:</span>
+                    <span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.0001</span>
+                <span class="k">elif</span> <span class="n">valid_acc</span> <span class="o">&gt;=</span> <span class="mf">0.97</span><span class="p">:</span>
+                    <span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.001</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">pass</span>
+                
+>>>>>>> dab270a41ec681edbc3b196ecdf33fb6db27137d
                     
 
     <span class="c1"># Save Model</span>
@@ -12988,6 +13033,7 @@ Default GPU Device: /gpu:0
 
 
 <div class="output_subarea output_stream output_stdout output_text">
+<<<<<<< HEAD
 <pre>Epoch   0 Batch   50/134 - Train Accuracy: 0.4839, Validation Accuracy: 0.5058, Loss: 1.7848
 Epoch   0 Batch  100/134 - Train Accuracy: 0.4980, Validation Accuracy: 0.5155, Loss: 1.0651
 Epoch   1 Batch   50/134 - Train Accuracy: 0.6098, Validation Accuracy: 0.6290, Loss: 0.6745
@@ -13008,6 +13054,48 @@ Epoch   8 Batch   50/134 - Train Accuracy: 0.9661, Validation Accuracy: 0.9642, 
 Epoch   8 Batch  100/134 - Train Accuracy: 0.9671, Validation Accuracy: 0.9715, Loss: 0.0288
 Epoch   9 Batch   50/134 - Train Accuracy: 0.9701, Validation Accuracy: 0.9664, Loss: 0.0263
 Epoch   9 Batch  100/134 - Train Accuracy: 0.9728, Validation Accuracy: 0.9758, Loss: 0.0253
+=======
+<pre>Epoch   0 Batch   50/134 - Train Accuracy: 0.4543, Validation Accuracy: 0.4824, Loss: 2.2200
+Epoch   0 Batch  100/134 - Train Accuracy: 0.4839, Validation Accuracy: 0.5149, Loss: 1.3753
+Epoch   1 Batch   50/134 - Train Accuracy: 0.6081, Validation Accuracy: 0.6324, Loss: 0.7043
+Epoch   1 Batch  100/134 - Train Accuracy: 0.6359, Validation Accuracy: 0.6499, Loss: 0.5963
+Epoch   2 Batch   50/134 - Train Accuracy: 0.7029, Validation Accuracy: 0.7139, Loss: 0.4089
+Epoch   2 Batch  100/134 - Train Accuracy: 0.7527, Validation Accuracy: 0.7580, Loss: 0.3322
+Epoch   3 Batch   50/134 - Train Accuracy: 0.8340, Validation Accuracy: 0.8366, Loss: 0.2220
+Epoch   3 Batch  100/134 - Train Accuracy: 0.8689, Validation Accuracy: 0.8759, Loss: 0.1747
+Epoch   4 Batch   50/134 - Train Accuracy: 0.9247, Validation Accuracy: 0.9313, Loss: 0.1122
+Epoch   4 Batch  100/134 - Train Accuracy: 0.9270, Validation Accuracy: 0.9331, Loss: 0.0875
+Epoch   5 Batch   50/134 - Train Accuracy: 0.9415, Validation Accuracy: 0.9527, Loss: 0.0667
+Epoch   5 Batch  100/134 - Train Accuracy: 0.9539, Validation Accuracy: 0.9546, Loss: 0.0547
+Epoch   6 Batch   50/134 - Train Accuracy: 0.9562, Validation Accuracy: 0.9661, Loss: 0.0452
+Epoch   6 Batch  100/134 - Train Accuracy: 0.9685, Validation Accuracy: 0.9723, Loss: 0.0377
+Epoch   7 Batch   50/134 - Train Accuracy: 0.9720, Validation Accuracy: 0.9796, Loss: 0.0333
+Epoch   7 Batch  100/134 - Train Accuracy: 0.9757, Validation Accuracy: 0.9785, Loss: 0.0282
+Epoch   8 Batch   50/134 - Train Accuracy: 0.9734, Validation Accuracy: 0.9775, Loss: 0.0303
+Epoch   8 Batch  100/134 - Train Accuracy: 0.9774, Validation Accuracy: 0.9812, Loss: 0.0278
+Epoch   9 Batch   50/134 - Train Accuracy: 0.9741, Validation Accuracy: 0.9809, Loss: 0.0286
+Epoch   9 Batch  100/134 - Train Accuracy: 0.9780, Validation Accuracy: 0.9813, Loss: 0.0263
+Epoch  10 Batch   50/134 - Train Accuracy: 0.9744, Validation Accuracy: 0.9824, Loss: 0.0296
+Epoch  10 Batch  100/134 - Train Accuracy: 0.9789, Validation Accuracy: 0.9810, Loss: 0.0243
+Epoch  11 Batch   50/134 - Train Accuracy: 0.9744, Validation Accuracy: 0.9822, Loss: 0.0296
+Epoch  11 Batch  100/134 - Train Accuracy: 0.9798, Validation Accuracy: 0.9816, Loss: 0.0263
+Epoch  12 Batch   50/134 - Train Accuracy: 0.9746, Validation Accuracy: 0.9824, Loss: 0.0288
+Epoch  12 Batch  100/134 - Train Accuracy: 0.9798, Validation Accuracy: 0.9812, Loss: 0.0249
+Epoch  13 Batch   50/134 - Train Accuracy: 0.9741, Validation Accuracy: 0.9826, Loss: 0.0288
+Epoch  13 Batch  100/134 - Train Accuracy: 0.9801, Validation Accuracy: 0.9819, Loss: 0.0258
+Epoch  14 Batch   50/134 - Train Accuracy: 0.9762, Validation Accuracy: 0.9825, Loss: 0.0274
+Epoch  14 Batch  100/134 - Train Accuracy: 0.9799, Validation Accuracy: 0.9824, Loss: 0.0248
+Epoch  15 Batch   50/134 - Train Accuracy: 0.9762, Validation Accuracy: 0.9825, Loss: 0.0282
+Epoch  15 Batch  100/134 - Train Accuracy: 0.9800, Validation Accuracy: 0.9819, Loss: 0.0255
+Epoch  16 Batch   50/134 - Train Accuracy: 0.9770, Validation Accuracy: 0.9822, Loss: 0.0263
+Epoch  16 Batch  100/134 - Train Accuracy: 0.9811, Validation Accuracy: 0.9821, Loss: 0.0247
+Epoch  17 Batch   50/134 - Train Accuracy: 0.9769, Validation Accuracy: 0.9824, Loss: 0.0278
+Epoch  17 Batch  100/134 - Train Accuracy: 0.9803, Validation Accuracy: 0.9819, Loss: 0.0239
+Epoch  18 Batch   50/134 - Train Accuracy: 0.9778, Validation Accuracy: 0.9826, Loss: 0.0276
+Epoch  18 Batch  100/134 - Train Accuracy: 0.9818, Validation Accuracy: 0.9819, Loss: 0.0241
+Epoch  19 Batch   50/134 - Train Accuracy: 0.9774, Validation Accuracy: 0.9820, Loss: 0.0257
+Epoch  19 Batch  100/134 - Train Accuracy: 0.9811, Validation Accuracy: 0.9822, Loss: 0.0247
+>>>>>>> dab270a41ec681edbc3b196ecdf33fb6db27137d
 Model Trained and Saved
 </pre>
 </div>
@@ -13028,7 +13116,11 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<<<<<<< HEAD
 <div class="prompt input_prompt">In&nbsp;[33]:</div>
+=======
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
+>>>>>>> dab270a41ec681edbc3b196ecdf33fb6db27137d
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13053,7 +13145,11 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<<<<<<< HEAD
 <div class="prompt input_prompt">In&nbsp;[35]:</div>
+=======
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
+>>>>>>> dab270a41ec681edbc3b196ecdf33fb6db27137d
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13073,6 +13169,7 @@ Model Trained and Saved
 </div>
 
 </div>
+<<<<<<< HEAD
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[34]:</div>
@@ -13197,6 +13294,8 @@ Successfully installed google-api-python-client-1.6.3 httplib2-0.10.3 oauth2clie
 </div>
 
 </div>
+=======
+>>>>>>> dab270a41ec681edbc3b196ecdf33fb6db27137d
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -13215,7 +13314,11 @@ Successfully installed google-api-python-client-1.6.3 httplib2-0.10.3 oauth2clie
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<<<<<<< HEAD
 <div class="prompt input_prompt">In&nbsp;[48]:</div>
+=======
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
+>>>>>>> dab270a41ec681edbc3b196ecdf33fb6db27137d
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sentence_to_seq</span><span class="p">(</span><span class="n">sentence</span><span class="p">,</span> <span class="n">vocab_to_int</span><span class="p">):</span>
@@ -13226,7 +13329,11 @@ Successfully installed google-api-python-client-1.6.3 httplib2-0.10.3 oauth2clie
 <span class="sd">    :return: List of word ids</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement Function</span>
+<<<<<<< HEAD
     <span class="n">word_ids</span> <span class="o">=</span> <span class="p">[</span><span class="n">vocab_to_int</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">source_vocab_to_int</span><span class="p">[</span><span class="s1">&#39;&lt;UNK&gt;&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">sentence</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>
+=======
+    <span class="n">word_ids</span> <span class="o">=</span> <span class="p">[</span><span class="n">vocab_to_int</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">source_vocab_to_int</span><span class="p">[</span><span class="s1">&#39;&lt;UNK&gt;&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>
+>>>>>>> dab270a41ec681edbc3b196ecdf33fb6db27137d
     
     <span class="k">return</span> <span class="n">word_ids</span>
 
@@ -13271,7 +13378,11 @@ Successfully installed google-api-python-client-1.6.3 httplib2-0.10.3 oauth2clie
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<<<<<<< HEAD
 <div class="prompt input_prompt">In&nbsp;[51]:</div>
+=======
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
+>>>>>>> dab270a41ec681edbc3b196ecdf33fb6db27137d
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">translate_sentence</span> <span class="o">=</span> <span class="s1">&#39;he saw a old yellow truck .&#39;</span>
@@ -13301,6 +13412,7 @@ Successfully installed google-api-python-client-1.6.3 httplib2-0.10.3 oauth2clie
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Input&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  Word Ids:      </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">translate_sentence</span><span class="p">]))</span>
+<<<<<<< HEAD
 <span class="n">english_words</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">source_int_to_vocab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">translate_sentence</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  English Words: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">english_words</span><span class="p">))</span>
 
@@ -13312,6 +13424,13 @@ Successfully installed google-api-python-client-1.6.3 httplib2-0.10.3 oauth2clie
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Google&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  French Words: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">en2fr</span><span class="p">(</span><span class="n">english_words</span><span class="p">)))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  Translated Output: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">fr2en</span><span class="p">(</span><span class="n">french_words</span><span class="p">)))</span>
+=======
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  English Words: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">([</span><span class="n">source_int_to_vocab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">translate_sentence</span><span class="p">]))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Prediction&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  Word Ids:      </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">translate_logits</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  French Words: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">target_int_to_vocab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">translate_logits</span><span class="p">])))</span>
+>>>>>>> dab270a41ec681edbc3b196ecdf33fb6db27137d
 </pre></div>
 
 </div>
@@ -13330,6 +13449,7 @@ Successfully installed google-api-python-client-1.6.3 httplib2-0.10.3 oauth2clie
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>INFO:tensorflow:Restoring parameters from checkpoints/dev
 Input
+<<<<<<< HEAD
   Word Ids:      [218, 52, 166, 74, 163, 21, 125]
   English Words: he saw a old yellow truck .
 
@@ -13340,6 +13460,14 @@ Prediction
 Google
   French Words: [&#39;il a vu un vieux camion jaune.&#39;]
   Translated Output: [&#39;it a bright yellow truck. &lt;EOS&gt;&#39;]
+=======
+  Word Ids:      [111, 74, 172, 40, 148, 213, 206]
+  English Words: [&#39;he&#39;, &#39;saw&#39;, &#39;a&#39;, &#39;old&#39;, &#39;yellow&#39;, &#39;truck&#39;, &#39;.&#39;]
+
+Prediction
+  Word Ids:      [245, 293, 144, 240, 353, 1]
+  French Words: il détestait les citrons . &lt;EOS&gt;
+>>>>>>> dab270a41ec681edbc3b196ecdf33fb6db27137d
 </pre>
 </div>
 </div>
