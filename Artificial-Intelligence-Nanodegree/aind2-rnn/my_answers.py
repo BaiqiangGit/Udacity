@@ -37,8 +37,8 @@ def cleaned_text(text, keep_chars=[]):
     # text = text.lower()
     chars = list(sorted(set(text)))
     
-    # Remove characters that are not alphanumeric or in our keep list
-    rem_chars = [char for char in chars if not char.isalnum() and char not in keep_chars]
+    # Remove characters that are not alpha or in our keep list
+    rem_chars = [char for char in chars if not char.isalpha() and char not in keep_chars]
     #rem_chars = [char for char in chars if char not in keep_chars]
     
     # Create translate table for fast replacement of characters
