@@ -1,15 +1,23 @@
 [//]: # (Image References)
 
-[image1]: ./images/obamas_with_keypoints.png "Facial Keypoint Detection"
+[image1]: ./images/obamas_trumps.png "Faces"
+[image2]: ./images/obamas_trumps_with_keypoints.png "Facial Keypoint Detection"
+
+[image3]: ./images/my_facial_keypoint_test.gif "Facial Keypoints"
+[image4]: ./images/my_sunglasses.gif "Sunglasses"
 
 # AIND Term II, Computer Vision Capstone Project 
 # Facial Keypoint Detection and Real-time Filtering
+
+## Results:
+
+<img src="./images/my_facial_keypoint_test.gif" width="300">     <img src="./images/my_sunglasses.gif" width="200">
 
 ## Project Overview
 
 Welcome to the Computer Vision capstone project in the AI Nanodegree program! In this project, you’ll combine your knowledge of computer vision techniques and deep learning to build and end-to-end facial keypoint recognition system. Facial keypoints include points around the eyes, nose, and mouth on any face and are used in many applications, from facial tracking to emotion recognition. Your completed code should be able to take in any image containing faces and identify the location of each face and their facial keypoints, as shown below.
 
-![Facial Keypoint Detection][image1]
+<img src="./images/obamas_trumps.png" width="400"><img src="./images/obamas_trumps_with_keypoints.png" width="400">
 
 The project will be broken up into a few main parts in one Python notebook:
 
